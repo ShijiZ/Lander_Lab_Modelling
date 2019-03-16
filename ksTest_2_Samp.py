@@ -7,20 +7,22 @@ import math
 from scipy import stats
 import numpy as np
 
+path = '/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Lander_LAB_Modelling/Rolando/'
+
 #import all files for same experiment p50 3X
-sample32 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1232_tamoxifen3x_P50tab.txt')
-sample33 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1233_tamoxifen3x_P50tab.txt')
-sample35 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1235_tamoxifen3x_P50tab.txt')
-sample36 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1236_tamoxifen3x_P50tab.txt')
-sample37 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1237_tamoxifen3x_P50tab.txt')
-sample07 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1307_tamoxifen3x_P50tab.txt')
-sample09 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1309_tamoxifen3x_P50tab.txt')
-sample10 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1310_tamoxifen3x_P50tab.txt')
-sample22 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1322_tamoxifen3x_P50tab.txt')
-sample30 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/1330_tamoxifen3x_P50tab.txt')
-T296 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/T296_PBS_P50_3x.txt')
-T306 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/T306_pbs_P50_3x.txt')
-T311 = pd.read_table('/Users/shijizhao/Documents/UCI/lab rotation/Lander Lab/Rolando/T311_pbs_P50_3x.txt')
+sample32 = pd.read_table('%s1232_tamoxifen3x_P50tab.txt'%path)
+sample33 = pd.read_table('%s1233_tamoxifen3x_P50tab.txt'%path)
+sample35 = pd.read_table('%s1235_tamoxifen3x_P50tab.txt'%path)
+sample36 = pd.read_table('%s1236_tamoxifen3x_P50tab.txt'%path)
+sample37 = pd.read_table('%s1237_tamoxifen3x_P50tab.txt'%path)
+sample07 = pd.read_table('%s1307_tamoxifen3x_P50tab.txt'%path)
+sample09 = pd.read_table('%s1309_tamoxifen3x_P50tab.txt'%path)
+sample10 = pd.read_table('%s1310_tamoxifen3x_P50tab.txt'%path)
+sample22 = pd.read_table('%s1322_tamoxifen3x_P50tab.txt'%path)
+sample30 = pd.read_table('%s1330_tamoxifen3x_P50tab.txt'%path)
+T296 = pd.read_table('%sT296_PBS_P50_3x.txt'%path)
+T306 = pd.read_table('%sT306_pbs_P50_3x.txt'%path)
+T311 = pd.read_table('%sT311_pbs_P50_3x.txt'%path)
 
 #index the column of interest which in this case was nevus area
 sample32 = sample32.iloc[:,1]
